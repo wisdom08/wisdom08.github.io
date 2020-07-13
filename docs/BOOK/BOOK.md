@@ -1,7 +1,7 @@
 ---
 title: BOOK
 has_children: true
-nav_order: 1
+nav_order: 2
 has_toc: ture
 permalink: docs/book
 ---
