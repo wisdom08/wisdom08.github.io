@@ -6,7 +6,7 @@ has_toc: false
 permalink: docs/til
 ---
 
-# Time Complexity TIL 표지
+# Today I learned
 
 {: .no_toc }
 
