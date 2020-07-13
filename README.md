@@ -2,42 +2,45 @@
 
 🚀 🐼
 
-yes
+## 백엔드 엔지니어
 
-You can use the [editor on GitHub](https://github.com/pmarsceill/test-jtd/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+안녕하세요! 백엔드 엔지니어 변지혜입니다.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 👨‍💻 Career
 
-### Markdown
+### 🏆 Prize
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### [🐙 GitHub](https://github.com/wisdom08)
 
-```markdown
-Syntax highlighted code block
+[wisdom08 - Overview](https://github.com/wisdom08)
 
-# Header 1
+개인 프로젝트와 팀 프로젝트를 진행하고 있는 **GitHub** 계정입니다.
 
-## Header 2
+### [📝 Blog](https://wisdom08.github.io/)
 
-### Header 3
+[지혜, 개발, 기록](https://wisdom08.github.io/)
 
-- Bulleted
-- List
+개발/리뷰 등을 올리는 **블로그**입니다.
 
-1. Numbered
-2. List
+---
 
-**Bold** and _Italic_ and `Code` text
+## 📚 Stack
 
-[Link](url) and ![Image](src)
-```
+다룰 수 있는 기술/언어들입니다.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- JAVA
+- HTML
+- CSS
+- JavaScript
+- React
+- git
 
-### Jekyll Themes
+---
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pmarsceill/test-jtd/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## 🌎 Web Project
 
-### Support or Contact
+제가 공부하면서 만든 개인 및 대회에서 진행한 웹 프로젝트 작업물입니다.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### 개인
+
+### 팀
