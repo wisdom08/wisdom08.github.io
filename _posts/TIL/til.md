@@ -1,7 +1,7 @@
 ---
 title: TIL
 has_children: true
-permalink: /TIL
+permalink: /til
 nav_order: 2
 ---
 
