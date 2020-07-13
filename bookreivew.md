@@ -1,6 +1,6 @@
 ---
 title: review 1
-parent: BOOK
+parent: book
 has_children: true
 nav_order: 1
 ---
