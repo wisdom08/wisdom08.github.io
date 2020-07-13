@@ -5,6 +5,4 @@ has_children: true
 nav_order: 1
 ---
 
-# Another page
-
-ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ
+# 공부중
