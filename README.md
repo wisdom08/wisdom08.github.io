@@ -1,4 +1,4 @@
-## WISDOM
+## About
 
 🚀 🐼
 
@@ -16,11 +16,11 @@
 
 개인 프로젝트와 팀 프로젝트를 진행하고 있는 **GitHub** 계정입니다.
 
-### [📝 Blog](https://wisdom08.github.io/)
+### [📝 Notion](https://www.notion.so/cb94b2617d874bf0a13a4c40fbe4baab?v=15164a5ddbad4489be3eebba92e528e2)
 
-[지혜, 개발, 기록](https://wisdom08.github.io/)
+[Notion](https://www.notion.so/cb94b2617d874bf0a13a4c40fbe4baab?v=15164a5ddbad4489be3eebba92e528e2)
 
-개발/리뷰 등을 올리는 **블로그**입니다.
+개발 관련 공부를 하고 주제별로 정리하고 있는 **노션 페이지**입니다.
 
 ---
 
