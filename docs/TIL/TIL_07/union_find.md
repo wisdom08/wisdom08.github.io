@@ -1,6 +1,6 @@
 ---
 title: union_find
-permalink: /docs/union_find
+permalink: /docs/til_0705
 parent: TIL
 grand_parent: TIL_07
 has_children: false

@@ -4,7 +4,7 @@ has_children: false
 nav_order: 4
 parent: TIL
 grand_parent: TIL_07
-permalink: /docs/note_4
+permalink: /docs/til_0703
 ---
 
 # Problems

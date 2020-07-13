@@ -1,9 +1,10 @@
 ---
 title: TIL_07
+parent: TIL
 has_children: true
 nav_order: 1
 has_toc: false
-permalink: docs/notes
+permalink: docs/til_07
 ---
 
 # Time Complexity TIL_07 표지

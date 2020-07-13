@@ -1,6 +1,6 @@
 ---
 title: multi_thread
-permalink: /docs/note_3
+permalink: /docs/til_0702
 parent: TIL
 grand_parent: TIL_07
 has_children: false

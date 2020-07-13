@@ -3,7 +3,7 @@ title: TIL
 has_children: true
 nav_order: 1
 has_toc: false
-permalink: docs/notes
+permalink: docs/til
 ---
 
 # Time Complexity TIL 표지

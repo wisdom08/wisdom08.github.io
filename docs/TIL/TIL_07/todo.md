@@ -4,8 +4,8 @@ has_children: false
 nav_order: 1
 parent: TIL
 grand_parent: TIL_07
-permalink: /docs/todo
----
+permalink: /docs/til_0704
+
 
 # TODO
 

@@ -1,6 +1,6 @@
 ---
 title: cpp
-permalink: /docs/note_1
+permalink: /docs/til_0701
 parent: TIL
 grand_parent: TIL_07
 has_children: false
