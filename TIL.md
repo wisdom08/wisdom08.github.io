@@ -1,5 +1,5 @@
 ---
-title: TIL
+title: til
 has_children: true
 nav_order: 2
 ---
