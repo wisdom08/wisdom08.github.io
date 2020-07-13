@@ -1,7 +1,7 @@
 ---
-title: Granchild of Test
-parent: Child of Test
-grand_parent: Test
+title: TIL_20200713
+parent: TIL_2020.07
+grand_parent: TIL
 nav_order: 1
 ---
 

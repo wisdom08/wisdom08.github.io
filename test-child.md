@@ -1,6 +1,6 @@
 ---
-title: Child of Test
-parent: Test
+title: TIL_2020.07
+parent: TIL
 has_children: true
 nav_order: 1
 ---
