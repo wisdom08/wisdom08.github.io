@@ -1,10 +1,14 @@
 ---
-title: TIL_20200714
-parent: TIL_2020.07
-grand_parent: TIL
-nav_order: 1
+title: TIL
+has_children: true
+permalink: /TIL
+nav_order: 2
 ---
 
-# I am a grand child of test
+# Another page
 
-폴더테스트
+Test this
+
+blah
+
+TIL

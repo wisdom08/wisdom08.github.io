@@ -1,7 +1,8 @@
 ---
-title: TIL_20200712
+title: TIL_20200713
 parent: TIL_2020.07
 grand_parent: TIL
+permalink: /TIL/TIL_2020.07/TIL_20200713
 nav_order: 1
 ---
 
