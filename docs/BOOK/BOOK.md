@@ -2,6 +2,8 @@
 title: BOOK
 has_children: true
 nav_order: 2
+has_toc: ture
+permalink: docs/book
 ---
 
 # 내가 읽은 + 읽을 개발서적 정리
