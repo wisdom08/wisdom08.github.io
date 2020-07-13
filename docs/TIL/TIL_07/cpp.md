@@ -1,7 +1,8 @@
 ---
 title: cpp
 permalink: /docs/note_1
-parent: A
+parent: TIL
+grand_parent: TIL_07
 has_children: false
 nav_order: 0
 ---

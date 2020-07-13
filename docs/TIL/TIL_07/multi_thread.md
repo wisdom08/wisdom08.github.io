@@ -1,7 +1,8 @@
 ---
 title: multi_thread
 permalink: /docs/note_3
-parent: A
+parent: TIL
+grand_parent: TIL_07
 has_children: false
 nav_order: 3
 ---

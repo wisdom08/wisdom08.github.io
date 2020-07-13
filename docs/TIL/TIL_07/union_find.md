@@ -1,7 +1,8 @@
 ---
 title: union_find
 permalink: /docs/union_find
-parent: A
+parent: TIL
+grand_parent: TIL_07
 has_children: false
 nav_order: 2
 ---

@@ -2,7 +2,8 @@
 title: todo
 has_children: false
 nav_order: 1
-parent: A
+parent: TIL
+grand_parent: TIL_07
 permalink: /docs/todo
 ---
 
