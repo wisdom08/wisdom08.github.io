@@ -18,7 +18,7 @@
 
 ### [📝 Notion](https://www.notion.so/cb94b2617d874bf0a13a4c40fbe4baab?v=15164a5ddbad4489be3eebba92e528e2)
 
-[Notion](https://www.notion.so/cb94b2617d874bf0a13a4c40fbe4baab?v=15164a5ddbad4489be3eebba92e528e2)
+[Notion - Overview](https://www.notion.so/cb94b2617d874bf0a13a4c40fbe4baab?v=15164a5ddbad4489be3eebba92e528e2)
 
 개발 관련 공부를 하고 주제별로 정리하고 있는 **노션 페이지**입니다.
 
@@ -29,6 +29,8 @@
 다룰 수 있는 기술/언어들입니다.
 
 - JAVA
+- Spring Framework (Spring boot)
+- MySQL
 - HTML
 - CSS
 - JavaScript
