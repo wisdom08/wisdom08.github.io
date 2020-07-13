@@ -1,5 +1,5 @@
 ---
-title: 객체지향 리뷰
+title: review 1
 parent: book
 has_children: true
 nav_order: 1

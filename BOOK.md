@@ -1,5 +1,5 @@
 ---
-title: 책
+title: BOOK
 has_children: true
 nav_order: 2
 ---
