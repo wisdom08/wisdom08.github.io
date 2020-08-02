@@ -27,3 +27,4 @@ permalink: docs/book
 4. 성공과 실패를 결정하는 1%의 Java 프로그래밍 원리
 5. Head First Object-Oriented Analysis & Design(세상을 설계하는 객체지향 방법론)
 6. 성공과 실패를 결정하는 1%의 객체지향 원리
+7. 객체지향적으로 생각하라
