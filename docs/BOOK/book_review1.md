@@ -1,6 +1,6 @@
 ---
 title: 객체지향 리뷰
-parent: BOOK
+parent: book
 has_children: false
 nav_order: 0
 has_toc: false
