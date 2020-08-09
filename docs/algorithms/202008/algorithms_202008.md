@@ -2,7 +2,7 @@
 title: algorithms_202008
 parent: algorithms
 has_children: true
-nav_order: 1
+nav_order: 2
 has_toc: false
 permalink: docs/algorithms_202008
 ---
