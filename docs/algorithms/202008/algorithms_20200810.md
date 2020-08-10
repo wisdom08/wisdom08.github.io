@@ -1,6 +1,6 @@
 ---
-title: algorithms_20200808
-permalink: /docs/algorithms_20200808
+title: algorithms_20200810
+permalink: /docs/algorithms_20200810
 parent: algorithms_202008
 grand_parent: algorithms
 has_children: false
