@@ -61,5 +61,5 @@ public class Main {
 ### 4. 회고
 
 - 쉽게 풀었다. 기분 좋다.
-- 근데 108ms 가 걸렸는데 자바코드 기준으로 1등의 시간은 68ms 다. 내 코드가 거의 1.5배 느리다.
-- 자세히 보지는 않았는데 68ms 가 소요된 다른 사람들의 코드를 훑어보니 코드에 전부 BufferedReader와 parseInt가 보인다. BufferedReader의 stream이 Scanner 보다 짧은건가 추측하고 일단 오늘은 끝. 다음에 기억나면 써먹어봐야겠다.
+- 근데 108ms 가 걸렸는데 자바코드 기준으로 1등의 시간은 68ms 다. 내 코드가 거의 1.5배 느리다. 메모리도 더 많이 잡아먹는다.
+- 68ms 가 소요된 다른 사람들의 코드를 훑어보니 코드에 전부 BufferedReader와 parseInt가 보인다. BufferedReader의 stream이 Scanner 보다 짧은건가 추측하고 일단 오늘은 끝. 다음에 기억나면 써먹어봐야겠다.
