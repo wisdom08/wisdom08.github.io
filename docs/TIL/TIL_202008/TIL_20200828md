@@ -1,0 +1,176 @@
+---
+title: TIL_20200828
+permalink: /docs/til_20200828
+parent: TIL_202008
+grand_parent: TIL
+has_children: false
+nav_order: 27
+---
+
+# Facts
+
+- 스프링 DI 방식 두 가지를 공부하고 생성자 방식과 설정 메서드 방식을 이용해서 회원가입, 암호변경, 조회 등 작은 콘솔 프로그램을 만들어봤습니다.
+
+# Feelings
+
+- 최범균 저자가 쓴 '초보웹개발자를 위한 spring4 프로그래밍 입문' 이라는 책으로 공부를 하고 있는데 제가 필요로 하는 부분들을 잘 설명해주는 책처럼 느껴집니다. 책이 마음에 듭니다. 책 덕분에 스프링의 이해도가 조금씩 늘어가고 있는 것 같습니다.
+
+# Finding
+
+## Srping
+
+### DI방식 1: 생성자 방식
+
+### DI방식 2: 설정 메서드 방식
+
+- 메서드 이름이 set으로 시작한다.
+- set 뒤에는 프로퍼티 이름의 첫 글자를 대문자로 치환한 이름을 사용한다.
+- 한 개의 파라미터를 가지며, 파라미터 타입은 프로퍼티의 타입이다.
+
+```java
+<bean id="infoPrinter" class="spring.MemberInfoPrinter">
+		<property name="memberDao" ref="memberDao"/>
+		<property name="printer" ref="memberPrinter"/>
+	</bean>
+
+// name => 의존 객체를 주입할 때 사용할 설정 메서드의 프로퍼티 이름
+// ref => 주입할 의존 객체에 해당하는 빈 객체의 식별값
+```
+
+### 생성자 vs 설정 메서드: 상황에 따라 혼용해서 사용
+
+- 생성자 방식: 빈 객체를 생성하는 시점에 모든 의존 객체가 주입된다.
+- 설정 메서드 방식: <property> 태그의 name 속성을 통해 어떤 의존 객체가 주입되는지 알 수 있다.
+  - 각 방식의 장점은 곧 다른 방식의 단점이다. 예를 들어 생성자의 파라미터 개수가 많을 경우, 각 <constructor-arg>태그가 어떤 의존 객체를 설정하는지 알아내려면 생성자의 코드를 확인해야 한다. 하지만 설정 메서드 방식은 <property> 태그의 name 속성만으로도 어떤 의존 객체를 설정하는지 쉽게 유추할 수 있다.
+  - 반면에, 생성자 방식은 빈 객체를 생성하는 시점에 필요한 모든 의존 객체를 주입받기 때문에, 이후 객체를 사용할 때 완전한 상태로 사용할 수 있다. 하지만 설정 메서드 방식은 <property> 태그가 누락되어도 빈 객체가 생성되기 때문에, 객체를 사용하는 시점에 NullPointerException이 발생할 수도 있다.
+
+```java
+
+package spring;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class MainForSpring {
+
+	private static ApplicationContext ctx = null;
+
+	public static void main(String[] args) throws IOException {
+		String[] conf = { "classpath:configImport.xml" };
+		ctx = new GenericXmlApplicationContext(conf);
+
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+		while (true) {
+			System.out.println("명령어를 입력하세요.");
+			String command = reader.readLine();
+			if (command.equalsIgnoreCase("exit")) {
+				System.out.println("종료합니다.");
+				break;
+			}
+
+			if (command.startsWith("new ")) {
+				processNewCommand(command.split(" "));
+				continue;
+			} else if (command.startsWith("change ")) {
+				processChangeCommand(command.split(" "));
+				continue;
+			} else if (command.equals("list")) {
+				processListCommand();
+				continue;
+			} else if (command.startsWith("info")) {
+				processInfoCommand(command.split(" "));
+				continue;
+			} else if (command.equals("version")) {
+				processVersionCommand();
+				continue;
+			}
+
+			printHelp();
+		}
+
+	}
+
+	private static void processVersionCommand() {
+		VersionPrinter versionPrinter = ctx.getBean("versionPrinter", VersionPrinter.class);
+		versionPrinter.print();
+	}
+
+	private static void processInfoCommand(String[] arg) {
+
+		if (arg.length != 2) {
+			printHelp();
+			return;
+		}
+		MemberInfoPrinter infoPrinter = ctx.getBean("infoPrinter", MemberInfoPrinter.class);
+		infoPrinter.printMemberInfo(arg[1]);
+	}
+
+	private static void processListCommand() {
+		MemberListPrinter listPrinter = ctx.getBean("listPrinter", MemberListPrinter.class);
+		listPrinter.printAll();
+	}
+
+	private static void printHelp() {
+		System.out.println();
+		System.out.println("잘못된 명령입니다. 아래 명령어 사용법을 확인하세요.");
+		System.out.println("명령어 사용법:");
+		System.out.println("new 이메일 이름 암호 암호확인");
+		System.out.println("change 이메일 현재비번 변경비번");
+		System.out.println();
+	}
+
+	private static void processChangeCommand(String[] arg) {
+		if (arg.length != 4) {
+			printHelp();
+			return;
+		}
+
+		ChangePasswordService changePwdSvc = ctx.getBean("changePwdSvc", ChangePasswordService.class);
+
+		try {
+			changePwdSvc.changePassword(arg[1], arg[2], arg[3]);
+			System.out.println("암호를 변경했습니다.\n");
+
+		} catch (MemberNotFoundException e) {
+			System.out.println("존재하지 않는 이메일입니다.\n");
+		} catch (IdPasswordNotMatchingException e) {
+			System.out.println("이메일과 암호가 일치하지 않습니다.\n");
+		}
+
+	}
+
+	private static void processNewCommand(String[] arg) {
+		if (arg.length != 5) {
+			printHelp();
+			return;
+		}
+
+		MemberRegisterService regSvc = ctx.getBean("memberRegSvc", MemberRegisterService.class);
+		RegisterRequest req = new RegisterRequest();
+		req.setEmail(arg[1]);
+		req.setName(arg[2]);
+		req.setPassword(arg[3]);
+		req.setConfirmPassword(arg[4]);
+
+		if (!req.isPasswordEqualToConfirmPassword()) {
+			System.out.println("암호와 확인이 일치하지 않습니다.\n");
+			return;
+		}
+
+		try {
+			regSvc.regist(req);
+			System.out.println("등록했습니다.\n");
+
+		} catch (AlreadyExistingMemberException e) {
+			System.out.println("이미 존재하는 이메일입니다.");
+		}
+	}
+
+}
+
+```
