@@ -1,0 +1,59 @@
+---
+title: algorithms_20200927_01
+permalink: /docs/algorithms_20200927
+parent: algorithms_202009
+grand_parent: algorithms
+has_children: false
+nav_order: 0
+---
+
+## 문제
+
+- hackerRank-warmup-Solve Me First
+---
+
+### 1. 이해
+
+- input: a(fisrt integer), b(second integer)
+- output: sum of the above two integers
+- 간단한 합 구하기
+
+### 2. 계획
+
+- input 2개 더한 값 출력하기
+
+### 3. 실행
+
+```java
+package Algorithms.warmup;
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solutions01 {
+
+
+    static int solveMeFirst(int a, int b) {
+        return a+b;
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a;
+        a = in.nextInt();
+        int b;
+        b = in.nextInt();
+        int sum;
+        sum = solveMeFirst(a, b);
+        System.out.println(sum);
+    }
+}
+
+```
+
+### 4. 회고
+
+- 앞으로 해커랭크와 백준으로 알고리즘 공부를 하려고 한다. 첫 문제는 매우 간단하다!
